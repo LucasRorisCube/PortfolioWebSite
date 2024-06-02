@@ -34,92 +34,57 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    height: calc(100vh - 60px); /* Full height minus header and footer */
-}
-
-.lateral-menu {
-    width: 300px;
-    background-color: #2a2a2a;
     padding: 20px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
 
-.hidden {
-    transform: translateX(-100%);
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Custom scrollbar styles */
-.lateral-menu::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-}
-
-.lateral-menu::-webkit-scrollbar-track {
-    background: #2a2a2a; /* Background color of the scrollbar track */
-    border-radius: 6px; /* Rounded corners for the track */
-}
-
-.lateral-menu::-webkit-scrollbar-thumb {
-    background-color: #444; /* Color of the scrollbar thumb */
-    border-radius: 6px; /* Rounded corners for the thumb */
-    border: 3px solid #2a2a2a; /* Space around the thumb to make it look narrower */
-}
-
-.lateral-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.lateral-menu ul li {
+.home-content h1 {
     margin-bottom: 20px;
 }
 
-.lateral-menu ul li a {
-    text-decoration: none;
-    color: #ffffff;
+.home-content p {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.projects {
     display: flex;
-    align-items: center;
-    border: 2px solid #444;
-    padding: 10px;
-    border-radius: 5px;
-    transition: border-color 0.3s, background-color 0.3s;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.lateral-menu ul li a:hover {
-    border-color: #888;
-}
-
-.lateral-menu ul li a img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-.lateral-menu ul li a.active {
-    border-color: #888;
-    background-color: #444;
-}
-
-.animation-display {
-    flex: 1;
+.project {
+    background-color: #2a2a2a;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-}
-
-.animation-display h1 {
-    text-align: center; /* Center the title text */
-}
-
-.animation-display iframe {
-    width: 100%;
-    height: 100%;
+    margin: 10px;
     border: 2px solid #444;
     border-radius: 5px;
-    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #444;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #888;
 }
 
 footer {
