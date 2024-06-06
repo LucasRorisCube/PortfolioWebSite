@@ -1,7 +1,6 @@
 var animationsList = [
-    { image: 'thumb1.jpg', html: 'RayCasting/index.html', title: 'Ray Casting' },
-    { image: 'thumb1.jpg', html: 'Fireworks/index.html', title: 'Fireworks' },
-    { image: 'thumb1.jpg', html: 'Fireworks/index.html', title: 'Fireworks' },
+    { image: 'raycasting.jpg', html: 'RayCasting/index.html', title: 'Ray Casting' },
+    { image: 'fireworks.jpg', html: 'Fireworks/index.html', title: 'Fireworks'}
 ];
 
 function compareNamesAnimations(a, b){

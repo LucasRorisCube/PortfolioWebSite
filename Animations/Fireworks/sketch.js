@@ -3,8 +3,6 @@ let fireworks = [];
 let gravity;
 
 function setup() {
-  let oi = 0;
-  createCanvas(600, 600);
   createCanvas(windowWidth*0.9, windowHeight*0.9);
   gravity = createVector(0, 1);
   
@@ -16,7 +14,7 @@ function windowResized() {
 
 function draw() {
   colorMode(RGB);
-  background(0, 0, 0, 20);
+  background(0, 0, 0, 30);
   
   if(random(0, 1) < 0.2){
     fireworks.push(new Firework());
