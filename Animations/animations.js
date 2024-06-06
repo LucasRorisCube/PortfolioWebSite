@@ -1,6 +1,7 @@
 var animationsList = [
     { image: 'thumb1.jpg', html: 'RayCasting/index.html', title: 'Ray Casting' },
     { image: 'thumb1.jpg', html: 'Fireworks/index.html', title: 'Fireworks' },
+    { image: 'thumb1.jpg', html: 'Fireworks/index.html', title: 'Fireworks' },
 ];
 
 function compareNamesAnimations(a, b){
@@ -15,7 +16,7 @@ animationsList = animationsList.sort(compareNamesAnimations);
 
 function loadAnimation(animationFile) {
     const frame = document.getElementById('animation-frame');
-    frame.src = animationFile;
+    frame.src = animationFile + "?x=" + Date.now();
 }
 
 
